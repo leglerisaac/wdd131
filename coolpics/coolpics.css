@@ -10,19 +10,19 @@
 --secondary-font: Mooli, san-serif;
 }
 
-body{  
+body {
     font-size: 1.2em;
     margin: 0;
 }
 
-header{
+header {
     background-color: var(--primary-color);
     color: var(--text-light);
     padding-top: 15px;
     padding-bottom: 25px;
 }
 
-header h1{
+header h1 {
     font-family: var(--secondary-font);
     font-size: 4.5rem;
     font-weight: 100;
@@ -30,19 +30,19 @@ header h1{
     padding: 0 20px;
 }
 
-header, main, footer{
+header, main, footer {
     margin: 0 auto;
     text-align: center;
 }
 
-#menu-button{
+#menu-button {
     background-color: var(--primary-color);
     color: var(--text-light);
     border: 0px;
     font-size: 2em;
 }
 
-a{
+a {
     display: block;
     margin: 12px auto;
     font-family: var(--primary-font);
@@ -51,33 +51,33 @@ a{
     
 }
 
-a:link, a:visited{
+a:link, a:visited {
     color: var(--text-light);
 }
 
-h2{
+h2 {
     font-family: var(--secondary-font);
     margin: 50px auto;
     font-size: 2em;
 }
 
-body{
+body {
     background-color: var(--text-light);
     font-family: var(--primary-font);
     font-size: 1.2em;
 }
 
-.gallery{
+.gallery {
     display: grid;
     grid-template-columns: 1fr;
     gap: 40px;
 }
 
-figure{
+figure {
     margin: 0 auto;
 }
 
-section > figure > img{
+section > figure > img {
     height: 250px;
     width: 250px;
     max-width: 100%;
@@ -88,45 +88,46 @@ section > figure > img{
     box-shadow: 7px 7px 7px var(--text-dark);
 }
 
-footer{
+footer {
     margin-bottom: 10px;
     background-color: var(--primary-color);
     padding: 10px 15%;
     text-align: left;
     margin-top: 30px;
     margin-bottom: 0;
+    color: var(--text-light);
 }
 
 .hide {
     display: none;
 }
 
-dialog{
+dialog {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, .6);
 }
 
-dialog > img{
+dialog > img {
     max-width: 90%;
     max-height: 100%;
     margin: 20vh auto;
     display: block;
 }
 
-.close-viewer{
+.close-viewer {
     position: absolute;
     top: 20vh;
     right: 4%
 }
 
 
-@media screen and (min-width: 700px){
+@media screen and (min-width: 700px) {
     /* nav{
         display: none;
     } */
     
-    .gallery{
+    .gallery {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         max-width: 800px;
@@ -135,24 +136,24 @@ dialog > img{
 
 }
 
-@media screen and (min-width: 1000px){
-    .gallery{
+@media screen and (min-width: 1000px) {
+    .gallery {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         max-width: 1025px;
         margin: 0 auto;
     }
 
-    #menu-button{
+    #menu-button {
         display: none;
     }
 
-    nav{
+    nav {
         display: block;
         margin: 15px auto;
     }
 
-    nav a{
+    nav a {
         display: inline-block;
         margin: 0 5%;
         font-size: 1.5em;

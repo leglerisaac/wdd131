@@ -1,0 +1,90 @@
+:root {
+    --primary-color: #3E6541;
+    --secondary-color: #63B159;
+    --text-color: #181F1C;
+    --main-font: 'Roboto';
+    --second-font: 'Lora';
+}
+
+body {
+    margin: 0;
+    font-family: roboto;
+}
+
+h1 {
+    color: var(--text-color);
+    font-size: 2.8em;
+    letter-spacing: 2px;
+    font-weight: 800;
+    margin: 55px auto;
+    text-align: center;
+    font-family: 'Lora';
+}
+
+nav {
+    border-top: 3px solid var(--secondary-color);
+    border-bottom: 3px solid var(--secondary-color);
+    font-family: 'Roboto'; 
+    margin: 0;
+    padding: 0 100px;;
+}
+
+nav > ul {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    margin: 25px auto;
+    justify-content: end;
+    justify-items: end;
+    padding-left: 0;
+    
+}
+
+nav > ul > li {
+    list-style-type: none;
+    font-size: 1.5em;
+}
+
+nav > ul > li > a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+#main-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+#quick-details {
+    display: inline-grid;
+    width: 250px;
+    font-size: 1.3em;
+    justify-content: end;
+    justify-items: end;
+    text-align: right;
+    padding-right: 25px;
+    border-right: 2px solid var(--secondary-color);
+}
+
+#book {
+    margin: 0 auto;
+    display: inline-grid;
+    max-width: 500px;
+}
+
+#book > h2 {
+    font-size: 1.8em;
+    font-family: 'Lora';
+    color: var(--primary-color);
+}
+
+#book > img {
+    max-width: 50%;
+    height: auto;
+    margin: 0 auto;
+}
+
+#filters {
+    border: 2px solid var(--secondary-color);
+    margin: 50px 75px 0px 0px;
+
+}

@@ -11,7 +11,7 @@
     top: -40px;
 }
 
-.skiptocontent:focus {
+.skiptocontent a:focus {
     top: 0;
 }
 
@@ -22,35 +22,34 @@ body {
 
 h1 {
     color: var(--text-color);
-    font-size: 2.8em;
+    font-size: 2.7em;
     letter-spacing: 2px;
     font-weight: 800;
-    margin: 55px auto;
+    margin: 50px auto;
     text-align: center;
     font-family: 'Lora';
 }
 
 nav {
-    border-top: 3px solid var(--secondary-color);
-    border-bottom: 3px solid var(--secondary-color);
+    border-top: 2px solid var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
     font-family: 'Roboto'; 
     margin: 0;
-    padding: 0 100px;;
+    padding: 0 75px;;
 }
 
 nav > ul {
     display: grid;
-    grid-template-columns: repeat(3, 100px);
-    margin: 25px auto;
+    grid-template-columns: repeat(3, 95px);
+    margin: 15px auto;
     justify-content: end;
     justify-items: end;
-    padding-left: 0;
-    
+    padding-left: 0;    
 }
 
 nav > ul > li {
     list-style-type: none;
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 nav > ul > li > a {
@@ -60,41 +59,50 @@ nav > ul > li > a {
 
 main {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-}
-
-#quick-details {
-    display: inline-grid;
-    width: 250px;
-    font-size: 1.3em;
-    justify-content: end;
-    justify-items: end;
-    text-align: right;
-    padding-right: 25px;
-    border-right: 2px solid var(--secondary-color);
-    margin-top: 50px;
+    grid-template-columns: 3fr 1fr;
+    margin-top: 40px;
 }
 
 #book {
     margin: 0 auto;
     display: inline-grid;
-    max-width: 500px;
+    grid-template-columns: 1fr 2fr;
+    grid-row-gap: 40px;
 }
 
-#book > h2 {
+#book > div:nth-child(odd) {
+    text-align: right;
+    padding-right: 20px;
+    border-right: 2px solid var(--secondary-color);
+    line-height: .5;
+}
+#book > div:nth-child(even) {
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 60px;
+}
+
+#book > div > h2 {
+    margin-top: 0;
     font-size: 1.8em;
     font-family: 'Lora';
     color: var(--primary-color);
+    letter-spacing: 0.5px;
 }
 
-#book > img {
-    max-width: 50%;
+#book > div > img {
+    max-width: 45%;
     height: auto;
     margin: 0 auto;
+    display: block;
+}
+
+.date {
+    font-size: 1.2em;
 }
 
 #filters {
     border: 2px solid var(--secondary-color);
-    margin: 50px 75px 0px 0px;
+    margin: 0px 50px 0px 0px;
 
 }

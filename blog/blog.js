@@ -23,5 +23,54 @@ const articles = [
 		ages: '12-16',
 		genre: 'Fantasy',
 		stars: '⭐⭐⭐⭐'
+	},
+	{
+		id: 3,
+		title: "Belgariad Book One: Pawn of Prophecy",
+		date: "Feb 12, 2022",
+		description:
+		"A fierce dispute among the Gods and the theft of a powerful Orb leaves the World divided into five kingdoms. Young Garion, with his 'Aunt Pol' and an elderly man calling himself Wolf --a father and daughter granted near-immortality by one of the Gods -- set out on a complex mission.",
+		imgSrc:
+		"https://images-na.ssl-images-amazon.com/images/I/41ZxXA+nInL.jpg",
+		imgAlt: "Book cover for Pawn of Prophecy",
+		ages: "12-16",
+		genre: "Fantasy",
+		stars: "⭐⭐⭐⭐⭐"
 	}
 ]
+
+const bookContainer = document.getElementById('book');
+
+function bookTemplate(article) {
+	return `
+		<div>
+    		<p class="date">${article.date}</p>
+			<p>${article.ages}</p>
+			<p>${article.genre}</p>
+			<p>${article.stars}</p>
+		</div>
+		<div>
+			<h2>${article.title}</h2>
+    		<img src="${article.imgSrc}" alt="${article.imgAlt}">
+    		<p>${article.description}</p>
+		</div>
+	`;
+}
+
+htmlBlock = articles.map(bookTemplate).join('');
+bookContainer.innerHTML += htmlBlock;
+/**
+
+<div>
+    <p class="date">July 5, 2022</p>
+	<p>10-14</p>
+	<p>Fantasy</p>
+	<p>*****</p>
+</div>
+<div>
+	<h2>Septimus Heap Book One: Magyk</h2>
+    <img src="Septimus-Heap-Magyk.jpg" alt="Septimus Heap: Magyk Book Cover">
+    <p>If you enjoy stories about seventh sons of seventh sons and magyk this is the book for you.</p>
+</div>
+
+ */

@@ -1,0 +1,124 @@
+form {
+    display: grid;
+    grid-template-columns: 85px 250px;
+    grid-template-rows: 25px 165px 20px 15px;
+    gap: 15px;
+}
+
+label, p {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 16px;
+}
+
+input {
+    font-size: 16px;
+    height: 25px;
+}
+
+#card-front, #card-back {
+    height: 230px;
+    width: 350px;
+    border: none;
+    border-radius: 5px;
+    display: grid;
+    background-color: #dddddd;
+}
+
+#card-front {
+    display: grid;
+    grid-template-columns: 195px 100px;
+    grid-template-rows: 55px 50px 50px;
+    z-index: 1;
+    padding: 20px;
+    justify-items: left;
+    gap: 15px;
+    box-shadow: 4px 4px 3px rgba(100, 100, 100, 0.2);
+}
+
+#card-number-container {
+    grid-column: 1;
+    grid-row: 2;
+    display: inline-grid;
+    justify-items: left;
+}
+
+#card-number-container > input {
+    width: 300px;
+}
+
+#card-holder-container {
+    width: 210px;
+    grid-column: 1/2;
+    grid-row: 3;
+    display: inline-grid;
+    justify-items: left;
+}
+
+#card-holder-container > input {
+    width: 180px;
+}
+
+#expiration-container {
+    grid-column: 2;
+    grid-row: 3;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+#expiration {
+        display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+}
+
+#expiration > input {
+    width: 35px;
+}
+
+#card-back {
+    grid-column: 2;
+    grid-row: 2;
+    z-index:0;
+    padding: 0px;
+    justify-items: right;
+    display: grid;
+    grid-template-columns: 260px 90px;
+    grid-template-rows: 90px 125px;
+    padding-top: 15px;
+}
+
+.card-image {
+    justify-self: end;
+}
+
+#card-stripe {
+    grid-column: span 2;
+    width: 350px;
+    height: 40px;
+    background-color: #444444;
+}
+
+#cvc {
+    width: 55px;
+    float: left;
+}
+
+#card-cvc-container {
+    margin-top: 45px;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#card-cvc-container > label {
+    float: left;
+}
+
+#submit{
+    grid-column: 3;
+    grid-row: 5;
+    height: 34px;
+    width: 85px;
+    border: 2px solid;
+    border-color: #757575 #333 #333 #757575;
+    border-radius: 5px;
+}

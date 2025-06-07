@@ -113,7 +113,7 @@ input {
     float: left;
 }
 
-#submit{
+#submit {
     grid-column: 3;
     grid-row: 5;
     height: 34px;

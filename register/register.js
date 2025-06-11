@@ -70,7 +70,7 @@ function totalFees() {
     console.log("Array:" + feeElements);
     // sum up all of the fees. Something like Array.reduce() could be very helpful here :) Or you could use a Array.forEach() as well.
     // Remember that the text that was entered into the input element will be found in the .value of the element.
-    const total = feeElements.reduce((total, feeElement) => total + number(feeElement.value), 0);
+    const total = feeElements.reduce((total, feeElement) => total + Number(feeElement.value), 0);
     // once you have your total make sure to return it!'
     console.log(total);
     return total;

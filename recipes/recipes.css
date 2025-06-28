@@ -58,12 +58,12 @@ form > input::placeholder {
     color: #aaa;
 }
 
-form > button {
+button {
     background-color: transparent;
     border: none;
 }
 
-form > button > img {
+#search-button > img {
     max-width: 30px;
     color: white;
     border: none;
@@ -77,7 +77,7 @@ form > button > img {
     justify-content: center;
 }
 
-.recipe-card {
+.recipe {
     border: 1px solid #000;
     margin: 25px;
     border-radius: 5px;
@@ -85,28 +85,33 @@ form > button > img {
     padding-bottom: 50px;
 }
 
-.recipe-card > img {
+.recipe > img {
     width: 100%;
     height: auto;
 }
 
-.recipe-tag {
+.recipe__tags {
+    padding: 0;
+}
+
+.recipe__tags > li {
     display: inline-block;
     border: 1px solid #000;
     padding: 10px;
     font-size: 1.3em;
     font-family: Arial, sans-serif;
-    margin: 0;
+    margin: 0 10px 10px 0;
     line-height: 0.75;
 }
 
-.recipe-name {
+.recipe > figcaption > h2 > a {
     color: var(--primary-color);
     font-family: Merienda, sans-serif;
     margin-bottom: 0px;
+    text-decoration: none;
 }
 
-.recipe-description {
+.recipe__description {
     display: none;
     font-size: 1.3em;
 }

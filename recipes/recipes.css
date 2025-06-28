@@ -139,7 +139,7 @@ footer > a {
         flex-direction: row;
         flex-wrap: wrap;
     }
-    .recipe-card {
+    .recipe {
         flex: 1 0 25%;
     }
 }
@@ -154,18 +154,18 @@ footer > a {
         align-items: center;     
     }
 
-    .recipe-card {
-        max-width: 100%;
+    .recipe {
+        width: 50%;
     }
 
-    .recipe-card > img {
+    .recipe > img {
         max-width: 50%;
         height: 100%;
         float: left;
         margin-right: 25px;
     }
 
-    .recipe-description {
+    .recipe__description {
         display: block;
     }
 

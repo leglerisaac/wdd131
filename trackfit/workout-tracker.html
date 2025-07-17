@@ -35,19 +35,22 @@
                     <table id="exercise-details1">
                         <tr>
                             <th>Set</th>
-                            <th>Reps</th>
+                            <th><label for="set-reps">Reps</label></th>
                             <th>Weight</th>
-                            <th><span aria-hidden="true" class="icon-checked">✅</span></th>
-                            <th></th>
+                            <th><label for="checkbox" class="hidden">I<span aria-hidden="true" class="icon-checked">✅</span>I</label></th>
                         </tr>
                         <tr>
                             <td>1</td>
-                            <td><input type="number" value="0" class="set-reps" name="set-reps" min="0"></td>
                             <td>
-                                <input type="number" value="0" class="set-weight" name="set-weight" min="0">
+                                <input type="number" value="0" id="set-reps" name="set-reps" min="0">
+                            </td>
+                            <td>
+                                <input type="number" value="0" id="set-weight" name="set-weight" min="0">
                                 <label for="set-weight">lbs</label>
                             </td>
-                            <td><input type="checkbox"></td></td>
+                            <td>
+                                <input type="checkbox" id="checkbox" name="checkbox">
+                            </td>
                         </tr>
                     </table>    
                     <div class="set-controls">

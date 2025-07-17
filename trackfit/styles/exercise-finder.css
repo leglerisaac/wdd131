@@ -60,6 +60,7 @@ nav > a {
     padding: 10px;
     font-size: 1.2em;
     font-family: var(--heading-font);
+    color: var(--nav-link-color);
 }
 
 a:visited {
@@ -80,8 +81,6 @@ main {
     max-width: 950px;
     overflow: hidden;
 }
-
-
 
 #search-form > input {
     height: 40px;

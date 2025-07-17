@@ -26,12 +26,17 @@ function exerciseTemplate() {
                         </tr>
                         <tr>
                             <td>1</td>
-                            <td><input type="number" value="0" class="set-reps" name="set-reps" min="0"></td>
+                            <td>
+                                <label for="set-reps"></label>
+                                <input type="number" value="0" class="set-reps" name="set-reps" min="0"></td>
                             <td>
                                 <input type="number" value="0" class="set-weight" name="set-weight" min="0">
                                 <label for="set-weight">lbs</label>
                             </td>
-                            <td><input type="checkbox"></td></td>
+                            <td>
+                                <label for="checkbox"></label>
+                                <input type="checkbox" name="checkbox">
+                            </td>
                         </tr>
                     </table>    
                     <div class="set-controls">
@@ -46,12 +51,15 @@ function setTemplate(setNumber) {
     return `
     <tr>
         <td>${setNumber}</td>
-        <td><input type="number" value="0" class="set-reps" name="set-reps" min="0"></td>
+        <td>
+            <input type="number" value="0" class="set-reps" name="set-reps" min="0"></td>
         <td>
             <input type="number" value="0" class="set-weight" name="set-weight" min="0">
             <label for="set-weight">lbs</label>
         </td>
-        <td><input type="checkbox"></td></td>
+        <td>
+            <input type="checkbox" name="checkbox">
+        </td>
     </tr>`;
 }
 
@@ -62,7 +70,7 @@ function addSet(event) {
     setNumber = targetExercise[targetExercise.length - 1];
     count[setNumber]++;
     const newSet = setTemplate(count[setNumber]);
-    event.target.parentElement.previousElementSibling.insertAdjacentHTML('beforeend', newSet);
+    event.target.parentElement.previousElementSibling.querySelector('tbody').insertAdjacentHTML('beforeend', newSet);
     
 }
 

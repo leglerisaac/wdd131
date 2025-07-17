@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TrackFit</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TrackFit Workout Tracker">
+    <meta author="Isaac Legler">
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="styles/workout-tracker.css">
+    <meta property="og:title" content="TrackFit">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="TrackFit Workout Tracker">
+    <meta property="og:image" content="leglerisaac.github.io/trackfit/images/logo.png">
+    <meta property="og:url" content="leglerisaac.github.io/trackfit/workout-tracker.html">
+    <meta name="twitter:card" content="leglerisaac.github.io/trackfit/images/logo.png">
+    <script src="scripts/workout-tracker.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#"><img src="images/logo.png" alt="TrackFit Logo"></a>
+            <a href="exercise-finder.html">Exercise Finder</a>
+        </nav>
+    </header>
+
+    <main>
+        <form action="complete">
+            <input type="text" placeholder="Workout Name" id="workout-name" name="workout-name">
+            <p id="time-started">Jan 01, 2001 12:00 PM</p>
+            <section id="exercise-container">
+                <div class="exercise-card">
+                    <input type="text" placeholder="Exercise Name" class="exercise-name" name="exercise-name">
+                    <input type="text" placeholder="notes" class="exercise-notes" name="exercise-notes">
+                    <table id="exercise-details1">
+                        <tr>
+                            <th>Set</th>
+                            <th>Reps</th>
+                            <th>Weight</th>
+                            <th><span aria-hidden="true" class="icon-checked">✅</span></th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td><input type="number" value="0" class="set-reps" name="set-reps" min="0"></td>
+                            <td>
+                                <input type="number" value="0" class="set-weight" name="set-weight" min="0">
+                                <label for="set-weight">lbs</label>
+                            </td>
+                            <td><input type="checkbox"></td></td>
+                        </tr>
+                    </table>    
+                    <div class="set-controls">
+                        <button id="add-set1">Add Set</button>
+                        <button id="remove-set1">Remove Set</button>
+                        <button id="remove-exercise1">Remove Exercise</button>
+                    </div>
+                </div>
+
+            </section>
+
+            <div id="button-container">
+                <button id="add-exercise">Add Exercise</button>
+                <button id="finish-workout">Finish Workout</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2025 TrackFit. All rights reserved.</p>
+    </footer>
+</body>
+</html>
